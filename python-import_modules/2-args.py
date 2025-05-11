@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import sys
-def main():
 
+
+def main():
 
     arguments = sys.argv[1:]
     if len(arguments) == 0:
