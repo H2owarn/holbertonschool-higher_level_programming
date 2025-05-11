@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 def main():
+    """Print the number of arguments and their values."""
     arguments = sys.argv[1:]
     if len(arguments) == 0:
         print(f"{len(arguments)} arguments.")
@@ -12,4 +13,5 @@ def main():
         print(f"{i}: {arg}")
 
 if __name__ == "__main__":
+
     main()
