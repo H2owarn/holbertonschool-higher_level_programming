@@ -7,7 +7,7 @@ def main():
     elif len(arguments) > 1:
         print(f"{len(arguments)} argument:")
     else:
-        print(f"{len(arguments)} arguments:")
+        print(f"{len(arguments)} argument:")
     for i, arg in enumerate(arguments, start=1):
         print(f"{i}: {arg}")
 
