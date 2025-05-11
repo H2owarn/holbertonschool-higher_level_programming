@@ -3,7 +3,7 @@ import sys
 
 
 def main():
-    
+
     numbers = sys.argv[1:]
     if len(numbers) == 0:
         print("0")
