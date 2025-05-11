@@ -3,7 +3,7 @@ import sys
 def main():
     arguments = sys.argv[1:]
     if len(arguments) == 0:
-        print(f"{len(arguments)} argument:")
+        print(f"{len(arguments)} arguments.")
     elif len(arguments) == 1:
         print(f"{len(arguments)} argument:")
     else:
