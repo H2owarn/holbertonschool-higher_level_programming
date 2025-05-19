@@ -18,12 +18,12 @@ Tests:
     >>> name("Ho", )
     My name is Ho 
 
-    >>>name("John", 89)
+    >>> name("John", 89)
     Traceback (most recent call last):
     ...
     last_name must be a string
 
-    >>>name(42, "Smith")
+    >>> name(42, "Smith")
     Traceback (most recent call last):
     ...
     first_name must be a string
