@@ -1,0 +1,29 @@
+The ``say_my_name`` module
+======================
+
+Using ``say_my_name``
+-------------------
+
+
+First import ``say_my_name`` from the ``3-say_my_name`` file:
+
+    >>> name = __import__('3-say_my_name').say_my_name
+
+
+Tests:
+
+    >>> name("Jo", "Smanta")
+    My name is Jo Smanta
+
+    >>> name("Ho", )
+    My name is Ho 
+
+    >>>name("John", 89)
+    Traceback (most recent call last):
+    ...
+    last_name must be a string
+
+    >>>name(42, "Smith")
+    Traceback (most recent call last):
+    ...
+    first_name must be a string
