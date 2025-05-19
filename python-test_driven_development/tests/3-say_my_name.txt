@@ -15,15 +15,15 @@ Tests:
     >>> name("Jo", "Smanta")
     My name is Jo Smanta
 
-    >>> name("Ho", )
+    >>> name("Ho")
     My name is Ho 
 
     >>> name("John", 89)
     Traceback (most recent call last):
     ...
-    last_name must be a string
+    TypeError: last_name must be a string
 
     >>> name(42, "Smith")
     Traceback (most recent call last):
     ...
-    first_name must be a string
+    TypeError: first_name must be a string
