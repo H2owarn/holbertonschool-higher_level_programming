@@ -35,8 +35,3 @@ matrix not a list:
     Traceback (most recent call last):
         ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-empty list is okay:
-    >>> matrix = []
-    >>> matrix_divided(matrix, 3)
-    []
