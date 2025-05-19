@@ -1,0 +1,56 @@
+The ``matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+
+First import ``matrix_divided`` from the ``2-matrix_divided`` file:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Tests:
+
+    Test - Valid matrix
+    >>> matrix = [[4, 8], [12, 16]]
+    >>> print(matrix_divided(matrix, 3))
+    [[1.33, 2.67], [4.0, 5.33]]
+
+    Test - Negative division
+    >>> matrix=[[6, -12], [-18, 24]]
+    >>> print(matrix_divided(matrix, -3))
+    [[-2.0, 4.0], [6.0, -8.0]]
+
+    Test - Non-numeric divisor (error)
+    >>> matrix=[[2, 4], [6, 8]]
+    >>> print(matrix_divided(matrix,"hello"))
+    ...
+    TypeError: div must be a number
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    >>> add(3.4, 1.2)
+    4
+
+    Test - a is not int
+    >>> add("haha", 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
