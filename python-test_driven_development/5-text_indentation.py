@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This module provides a function prints a text with 2 new lines after each of these characters: ., ? and : """
+"""This module provides a function prints a 
+text with 2 new lines after each of these characters: ., ? and : """
 
 
 def text_indentation(text):
@@ -14,8 +15,8 @@ def text_indentation(text):
 
     """
     if not isinstance(text, str):
-        raise TypeError ("text must be a string")
-    
+        raise TypeError("text must be a string")
+
     i = 0
     while i < len(text):
         print(text[i], end="")
