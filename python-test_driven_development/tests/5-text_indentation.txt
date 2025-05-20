@@ -11,32 +11,33 @@ cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio \
 beatiorem! Iam ruinas videres""")
 
  Lorem ipsum dolor sit amet,
-
+<BLANKLINE>
  consectetur adipiscing elit. Quonam modo?
-
+<BLANKLINE>
  Utrum igitur tibi litteram videor an totas paginas commovere?
-
+<BLANKLINE>
  Non autem hoc:
-
+<BLANKLINE>
  igitur ne illud quidem. Fortasse id optimum,
-
+<BLANKLINE>
  sed ubi illud:
-
+<BLANKLINE>
  Plus semper voluptatis?
-
+<BLANKLINE>
  Teneo,
-
+<BLANKLINE>
  inquit,
-
+<BLANKLINE>
  finem illi videri nihil dolere. Transfer idem ad modestiam vel temperantiam,
-
+<BLANKLINE>
  quae est moderatio cupiditatum rationi oboediens. Si id dicis,
-
+<BLANKLINE>
  vicimus. Inde sermone vario sex illa a Dipylo stadia confecimus. Sin aliud quid voles,
-
+<BLANKLINE>
  postea. Quae animi affectio suum cuique tribuens atque hanc,
-
+<BLANKLINE>
  quam dico. Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
+<BLANKLINE>
 
  >>> text_indentation(2)
  Traceback (most recent call last):
@@ -47,15 +48,15 @@ beatiorem! Iam ruinas videres""")
  Holberton School
 
  >>> text_indentation("Holberton. School? How are you: John")
- Holberton.
-
- School?
-
- How are you:
-
- John
+Holberton.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+John
 
  >>> text_indentation("Holberton.School")
- Holberton.
-
- School
+Holberton.
+<BLANKLINE>
+School
