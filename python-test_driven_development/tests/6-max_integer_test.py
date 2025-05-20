@@ -9,8 +9,16 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
     def test_positive_numbers(self):
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+
     def test_positive2_numbers(self):
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
+
+    def test_one_nagative_numbers(self):
+        self.assertEqual(max_integer([1, -3, 4, 2]), 4)
+
+    def test_nagative_numbers(self):
+        self.assertEqual(max_integer([-1, -3, -4, -2]), -1)
+
     def test_single_element(self):
         self.assertEqual(max_integer([42]), 42)
 
