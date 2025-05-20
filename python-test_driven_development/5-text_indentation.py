@@ -27,7 +27,7 @@ def text_indentation(text):
             print(sentence)
             print()
             start = i + 1
- 
+
     if start < len(text):
         trailing = text[start:].strip()
         if trailing:
