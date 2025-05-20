@@ -15,7 +15,7 @@ Tests:
     >>> name("Jo", "Smanta")
     My name is Jo Smanta
 
-    >>> name("Ho")
+    >>> name("Ho", )
     My name is Ho 
 
     >>> name("John", 89)
