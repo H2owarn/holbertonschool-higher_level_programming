@@ -5,6 +5,7 @@
 class Square:
     """Represents a square with a private size attribute."""
 
+
     def __init__(self, size=0):
         self.size = size
 
@@ -25,7 +26,7 @@ class Square:
     def area(self):
         """Returns the current square area."""
         return self.__size ** 2
-    
+
     def my_print(self):
         """Return the square withe the character #"""
         if self.__size == 0:
