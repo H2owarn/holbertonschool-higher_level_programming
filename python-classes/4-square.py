@@ -1,24 +1,24 @@
 #!/usr/bin/python3
-"""This module write a class Square. """
+"""Defines a Square class with size validation and area calculation."""
 
 
 class Square:
     """Represents a square with a private size attribute."""
 
     def __init__(self, size=0):
-        self.__size = size   # private class
-
+        self.size = size
+    
     @property
     def size(self):
         """Retrieves the size of the square."""
-        return self.__size
+        return self.__size # private class
     
     @size.setter
     def size(self, value):
         """Sets the size of the square with validation."""
-        if not isinstance(size, int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if size < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
