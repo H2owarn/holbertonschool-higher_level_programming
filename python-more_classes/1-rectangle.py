@@ -5,8 +5,8 @@
 class Rectangle:
     """Represents a rectangle with a private size attribute."""
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -24,7 +24,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Reetrieve the width og the rectangle."""
+        """Reetrieve the height og the rectangle."""
         return self.__height
     
     @height.setter
