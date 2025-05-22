@@ -8,7 +8,6 @@ class Rectangle:
         self.width = width
         self.height = height
 
-
     @property
     def width(self):
         """Retrieve the width of the rectangle."""
@@ -40,7 +39,7 @@ class Rectangle:
     def area(self):
         """Return the current rectangle area."""
         return self.__width * self.__height
-    
+
     def perimeter(self):
         """Return the rectangel perimeter """
         if self.__width == 0 or self.__height == 0:
