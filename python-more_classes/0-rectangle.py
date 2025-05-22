@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Return empty class"""
+"""This module defines an empty Rectangle class."""
 
 
 class Rectangle:
+    """An emty Square class"""
     pass
