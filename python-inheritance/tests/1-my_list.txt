@@ -18,5 +18,5 @@ Tests :
 [1, 4, 2, 3, 5]
 
 
->>>mylist.print_sorted()
+>>> mylist.print_sorted()
 [1, 4, 2, 3, 5]
