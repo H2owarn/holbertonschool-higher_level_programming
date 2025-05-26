@@ -9,14 +9,25 @@ import ``MyList`` for the ``1-My_list`` file:
 
 Tests :
 >>> mylist = MyList()
+Expecting nothing
+
 >>> mylist.append(1)
+Expecting nothing
+
 >>> mylist.append(4)
+Expecting nothing
+
 >>> mylist.append(2)
+Expecting nothing
+
 >>> mylist.append(3)
+Expecting nothing
+
 >>> mylist.append(5)
+Expecting nothing
+
 >>> mylist
 [1, 4, 2, 3, 5]
-
 
 >>> mylist.print_sorted()
 [1, 2, 3, 4, 5]
