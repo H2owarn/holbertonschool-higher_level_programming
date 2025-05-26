@@ -9,19 +9,48 @@ import ``MyList`` for the ``1-My_list`` file:
 
 Tests :
 >>> mylist = MyList()
-
 >>> mylist.append(1)
-
 >>> mylist.append(4)
-
 >>> mylist.append(2)
-
 >>> mylist.append(3)
-
 >>> mylist.append(5)
 
+Test present: check print_sorted() with not sorted append
 >>> mylist
 [1, 4, 2, 3, 5]
 
+Test present: check print_sorted() with sorted append :
 >>> mylist.print_sorted()
 [1, 2, 3, 4, 5]
+
+
+Test present: check print_sorted() with no sorted append with negative number :
+>>> mylist = MyList()
+>>> mylist.append(1)
+>>> mylist.append(-4)
+>>> mylist.append(3)
+>>> mylist
+[1, -4, 3]
+
+Test present: check print_sorted() with sorted append with negative number :
+>>> mylist.print_sorted()
+[-4, 1, 3]
+
+Test present: check print_sorted() with empty list:
+>>> mylist = MyList()
+>>> mylist.print_sorted()
+[]
+
+Test present: check print_sorted() returns a new list:
+>>> mylist = MyList()
+>>> mylist.append(1)
+>>> mylist.append(4)
+>>> mylist.append(2)
+>>> sorted_result = mylist.print_sorted()
+[1, 2, 4]
+
+>>> my_list
+[1, 4, 2]
+
+>>> sorted_result is mylist
+False
