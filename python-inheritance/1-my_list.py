@@ -5,4 +5,4 @@
 class MyList(list):
     """Return class MyList that inherits from list."""
     def print_sorted(self):
-        print (self)
+        print (sorted(self))
