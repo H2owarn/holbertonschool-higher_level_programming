@@ -1,0 +1,21 @@
+The ``MyList`` module
+=======================
+
+Using ``MyList``
+----------------
+
+import ``MyList`` for the ``1-My_list`` file:
+    >>> myList = __import__('1-my_list').MyList
+
+Tests :
+    >>> mylist = MyList()
+    >>> mylist.append(1)
+    >>> mylist.append(4)
+    >>> mylist.append(2)
+    >>> mylist.append(3)
+    >>> mylist.append(5)
+    >>> mylist
+    [1, 4, 2, 3, 5]
+
+    >>>mylist.print_sorted()
+    [1, 4, 2, 3, 5]
