@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-MyList = __import__('1-my_list').MyList
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-my_list = MyList()
-my_list.append(1)
-my_list.append(4)
-my_list.append(2)
-my_list.append(3)
-my_list.append(5)
-print(my_list)
-my_list.print_sorted()
-print(my_list)
+bg = BaseGeometry()
+
+bg.integer_validator("my_int", 12)
+bg.integer_validator("width", 89)
+
+
+
+try:
+    bg.integer_validator("age", True)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
