@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module write Write a class BaseGeometry"""
+"""This module write Write a class BaseGeometry and Rectangle classes"""
 
 class BaseGeometry:
     """A class for geometric operations."""
@@ -31,3 +31,5 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """Returns a string representation of the rectangle."""
         return f"[Rectangle] {self.__width}/{self.__height}"
+
+print(issubclass(Rectangle, BaseGeometry))
