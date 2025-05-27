@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 """This module write Write a class BaseGeometry"""
 
-#!/usr/bin/python3
-"""This module write Write a class BaseGeometry"""
-
-
 class BaseGeometry:
     """A class for geometric operations."""
 
