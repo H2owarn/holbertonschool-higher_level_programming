@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 """This module write function check if the object’s class 
-is a subclass (meaning it was built on top of another class) of a given 
-class—but it returns True only if the instance’s type is different 
-from the class itself. 
-"""
+is a subclass"""
 
 
 def inherits_from(obj, a_class):
