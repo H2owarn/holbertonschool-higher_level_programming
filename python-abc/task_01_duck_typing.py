@@ -13,7 +13,6 @@ class Shape(ABC):
     def perimeter(self):
         pass
 
- # Subclass implementing the blueprint
 
 class Circle(Shape):
     def __init__(self, radius):
