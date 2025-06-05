@@ -3,6 +3,10 @@
 
 
 import pickle
+import os
+
+
+filename = "object.pkl"
 
 
 class CustomObject:
@@ -26,5 +30,8 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         """Deserialize from a file"""
-        with open(filename, "rb") as file:
-            return pickle.load(file)
+        if os.path.exists(filename) and os.path.getsize(filename) > 0:
+            with open(filename, "rb") as file:
+                return pickle.load(file)
+        else:
+            return None
