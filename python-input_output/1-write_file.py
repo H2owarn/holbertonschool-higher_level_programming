@@ -3,6 +3,7 @@
 
 
 def write_file(filename="", text=""):
+    """write a text file and return lenth of characters"""
     with open(filename, 'w', encoding="utf-8") as file:
         write_content = file.write(text)
         return write_content
