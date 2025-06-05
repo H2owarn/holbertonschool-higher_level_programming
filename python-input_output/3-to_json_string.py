@@ -5,8 +5,4 @@
 import json
 def to_json_string(my_obj):
     """Return the JSON reprentation of an object as a string"""
-    try:
-        return json.dumps(my_obj, ensure_ascii=False)
-    except TypeError:
-        invalid_json = str(my_obj)
-        json.loads(invalid_json)
+    return json.dumps(my_obj, ensure_ascii=False)
