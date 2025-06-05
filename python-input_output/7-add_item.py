@@ -11,6 +11,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 filename = "add_item.json"
 
+
 def main():
     """Adds argument to a list and save to JSON file"""
     try:
@@ -25,6 +26,7 @@ def main():
 
     except Exception as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     main()
