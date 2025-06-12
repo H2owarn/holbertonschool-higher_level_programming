@@ -31,7 +31,7 @@ class MyHandler(BaseHTTPRequestHandler):
              self.send_response(404)
              self.send_header("Content-type", "text/plain")
              self.end_headers()
-             self.wfile.write(b"Not found")
+             self.wfile.write(b"404 Not Found")
 
     #  start the web server
 
