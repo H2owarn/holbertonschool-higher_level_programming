@@ -27,7 +27,7 @@ class MyHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"OK")
 
-        else:
+        elif self.path == "/undefined HTTP":
              self.send_response(404)
              self.send_header("Content-type", "text/html")
              self.end_headers()
