@@ -36,7 +36,7 @@ def add_user():
     if not data:
         return jsonify({"error": "Invalid JSON"}), 400
 
-    username = data.get("username")
+    username = data.get('username')
     print(f"User name: {username}")
 
     if not username:
@@ -51,4 +51,4 @@ def add_user():
 
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(debug=True, host='localhost',port=5000)
