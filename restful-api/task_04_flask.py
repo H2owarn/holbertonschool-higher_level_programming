@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 #  When someone visits the / endpoint
 
+users = {}
+
 @app.route("/")
 def home():
     return "Welcome to the Flask API!"
-
-users = {}
 
 @app.route("/data")
 def username():
@@ -33,20 +33,26 @@ def add_user():
 
     data = request.get_json()
 
+    if not data:
+        return jsonify({"error": "Invalid JSON"}), 400
+
     username = data.get("username")
+    print(f"User name: {username}")
 
     if username in users:
-        return jsonify({"error": "Username already exists."}), 400
+        return jsonify({"error": "Username already exists"}), 400
 
     if not username:
         return jsonify({"error": "Username is required"}), 400
 
+
     users[username] = {
-        "username": username,
-        "name": data.get("name"),
-        "age": data.get("age"),
-        "city": data.get("city")
+    "username": username,
+    "name": data.get("name"),
+    "age": data.get("age"),
+    "city": data.get("city")
     }
+
     return jsonify({"message": "User added", "user": users[username]}), 201
 
 if __name__ == "__main__":
