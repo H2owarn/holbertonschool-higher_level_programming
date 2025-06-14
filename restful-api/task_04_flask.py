@@ -46,7 +46,7 @@ def add_user():
         return jsonify({"error": "Username already exists"}), 400
 
     users[username] = {
-    "username": username, .
+    "username": username,
     "name": data.get("name"),
     "age": data.get("age"),
     "city": data.get("city")
