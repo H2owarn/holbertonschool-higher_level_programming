@@ -41,7 +41,7 @@ auth = HTTPBasicAuth()
 def verify_pass(username, password):
     user = users.get(username)
     if user and check_password_hash(user["password"], password):
-        return username   # ← tells HTTPAuth “login succeeded”
+        return user  # ← tells HTTPAuth “login succeeded”
 
     return None   # ← fail
 
@@ -51,6 +51,11 @@ def verify_pass(username, password):
 @auth.login_required
 def basic_protected():
     return "Basic Auth: Access Granted", 200
+
+@auth.error_handler
+def unauthorized():
+    return jsonify({"error": "Unauthorized access"}), 401
+
 
 @app.route('/login', methods=['POST'])
 def login():
