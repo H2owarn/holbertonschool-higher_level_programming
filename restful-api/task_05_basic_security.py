@@ -31,7 +31,7 @@ users = {
 def verify_password(username, password):
     user = users.get(username)
     if user and check_password_hash(user['password'], password):
-        return username  # must return user object, not just username
+        return user  # must return user object, not just username
 
 @auth.error_handler
 def unauthorized():
@@ -40,7 +40,7 @@ def unauthorized():
 @app.route("/basic-protected")
 @auth.login_required
 def basic_protected():
-    return "Basic Auth: Access Granted", 200
+    return "Basic Auth: Access Granted"
 
 @app.route("/debug-auth")
 def debug_auth():
@@ -64,12 +64,12 @@ def login():
         return jsonify({"msg": "Wrong username or password"}), 401
 
     token = create_access_token(identity=data["username"])
-    return jsonify(access_token=token), 200
+    return jsonify(access_token=token)
 
 @app.route("/jwt-protected")
 @jwt_required()
 def jwt_protected():
-    return "JWT Auth: Access Granted", 200
+    return "JWT Auth: Access Granted"
 
 @app.route("/admin-only")
 @jwt_required()
@@ -78,7 +78,7 @@ def admin_only():
     user = users.get(curr_user)
     if not user or user["role"] != "admin":
         return jsonify({"error": "Admin access required"}), 403
-    return "Admin Access: Granted", 200
+    return "Admin Access: Granted"
 
 # ─────────── JWT ERROR HANDLERS ───────────
 @jwt.unauthorized_loader
@@ -103,4 +103,4 @@ def handle_fresh_token_required(jwt_header, jwt_payload):
 
 # ─────────── RUN ───────────
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
