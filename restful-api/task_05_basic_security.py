@@ -42,6 +42,12 @@ def unauthorized():
 def basic_protected():
     return "Basic Auth: Access Granted", 200
 
+@app.route("/debug-auth")
+def debug_auth():
+    auth_header = request.headers.get("Authorization")
+    return jsonify({"Authorization": auth_header})
+
+
 # ─────────── JWT AUTH ───────────
 @app.route("/login", methods=["POST"])
 def login():
