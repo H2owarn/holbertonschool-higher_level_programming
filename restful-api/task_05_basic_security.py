@@ -31,7 +31,7 @@ users = {
 def verify_password(username, password):
     user = users.get(username)
     if user and check_password_hash(user['password'], password):
-        return user  # must return user object, not just username
+        return username  # must return user object, not just username
 
 @auth.error_handler
 def unauthorized():
