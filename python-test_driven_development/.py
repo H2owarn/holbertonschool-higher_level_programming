@@ -1,5 +1,18 @@
-#!/usr/bin/python3
-text_indentation = __import__('5-text_indentation').text_indentation
+class Base():
+    """ My base class """
 
-text_indentation("Let's print a new-line! Here goes:\nPrinted.")
- 
+    __nb_instances = 0
+
+    def __init__(self):
+        Base.__nb_instances += 1
+        self.id = Base.__nb_instances
+
+class User(Base):
+    """ My User class """
+
+    def __init__(self):
+        super().__init__()
+        self.id += 99
+
+u = User()
+print(u.id)
