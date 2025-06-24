@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS second_table (
     name VARCHAR(256) NOT NULL,
     score INT NOT NULL,
     PRIMARY KEY (id)
-)
+);
 
 -- Inserts a new row in the table
 INSERT INTO second_table (id, name, score) VALUES
