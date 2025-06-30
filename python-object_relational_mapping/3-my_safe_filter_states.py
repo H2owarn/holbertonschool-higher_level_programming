@@ -31,7 +31,7 @@ if __name__ == "__main__":
         "ORDER BY id ASC"
     )
 
-    cur.execute(query, (state_name))
+    cur.execute(query, (state_name,))
 
     for row in cur.fetchall():
         print(row)
