@@ -20,10 +20,13 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute(
-        "SELECT * " \
-        "FROM states " \
-        "WHERE name LIKE BINARY 'N%' " \
-        "ORDER BY id ASC")
+        (
+        "SELECT * "
+        "FROM states "
+        "WHERE name LIKE BINARY 'N%' "
+        "ORDER BY id ASC"
+        )
+    )
 
     # fetch and print all rows
     for row in cur.fetchall():
