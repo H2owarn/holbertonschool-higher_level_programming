@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+"""This script connects to a MySQL database and retrieves
+all states from the 'states' table whose names start with 'N'."""
 
 import MySQLdb
 import sys
-
-"""This script connects to a MySQL database and retrieves
-all states from the 'states' table whose names start with 'N'."""
 
 if __name__ == "__main__":
 
