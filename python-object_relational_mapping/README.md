@@ -1,0 +1,10 @@
+- 📝 The SQLAlchemy ORM maps Python classes to database tables and synchronizes their changes using a "unit of work".
+- 🗃️ It contrasts with the SQLAlchemy Expression Language, focusing on higher-level usage and abstracting database interactions.
+- 🔄 While the ORM and Expression Language overlap, their approaches to data structure and SQL representation differ.
+- 🛠️ Applications can use the ORM exclusively or integrate with the Expression Language for specific database operations.
+- 🚀 SQLAlchemy supports version checking and connects to databases via create_engine(), utilizing dialects like SQLite.
+- 📜 Declarative allows defining database tables and Python classes together, creating mappings via declarative_base().
+- 📊 SQLAlchemy manages table metadata with MetaData and creates tables using Base.metadata.create_all(engine).
+- 📝 Mapped classes like User define table details and use SQLAlchemy's instrumentation for database operations.
+- 📡 Sessions manage database interactions, utilizing sessionmaker(bind=engine) to connect and handle transactions.
+- 💾 Operations like adding, updating, querying, and rolling back changes are managed within SQLAlchemy sessions.
