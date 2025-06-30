@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
-"""This script connects to a MySQL database and retrieves all rows from the 'states' table,
+"""This script connects to a MySQL database and retrieves
+ all rows from the 'states' table,
 ordering them by the 'id' column in ascending order.
-It requires three command line arguments: username, password, and database name.
-It uses the MySQLdb library to connect to the database and execute the query.
+It requires three command line arguments:
+username, password, and database name.
+It uses the MySQLdb library to connect to the database
+and execute the query.
 """
 
 import MySQLdb
