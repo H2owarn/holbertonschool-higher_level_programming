@@ -23,16 +23,16 @@ if __name__ == "__main__":
 
 # Create a session to interact with the DB
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
 # Query all State objects, sorted by id
 
-states = session.query(State).order_by(State.id).all()
+    states = session.query(State).order_by(State.id).all()
 
 #  Print the results
 
-for state in states:
-    print(f"{state.id}: {state.name}")
+    for state in states:
+        print(f"{state.id}: {state.name}")
 
-session.close()
+    session.close()
