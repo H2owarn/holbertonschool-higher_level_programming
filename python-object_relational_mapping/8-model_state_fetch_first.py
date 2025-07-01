@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
 """This script connects to a MySQL database and retrieves
 the first State object from the 'states' table, sorted by id."""
+
 
 import sys
 from sqlalchemy import (create_engine)
@@ -24,7 +24,6 @@ if __name__ == "__main__":
     # Create a session to interact with the DB
     Session = sessionmaker(bind=engine)
     session = Session()
-
 
     # Query the first State object, sorted by id
     state = session.query(State).order_by(State.id).first()
