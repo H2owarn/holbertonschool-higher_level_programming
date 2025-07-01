@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This script connects to a MySQL database and retrieves
-all State objects from the 'states' table that contain the letter 'a'."""
+all State objects from the 'states' table that match a given name."""
 
 
 import sys
