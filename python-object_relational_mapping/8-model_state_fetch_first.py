@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""This script connects to a MySQL database and retrieves
+the first State object from the 'states' table, sorted by id."""
 
 import sys
 from sqlalchemy import (create_engine)
