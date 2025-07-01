@@ -30,7 +30,6 @@ if __name__ == "__main__":
     session.add(new_state)
     session.commit()
 
-
     # Print the result
     for state in session.query(State).filter(State.name == "Louisiana").all():
         print(f"{state.id}")
