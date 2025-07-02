@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-
 """This module defines the City class for use with SQLAlchemy ORM."""
 
 from model_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
-
 
 
 class City(Base):
