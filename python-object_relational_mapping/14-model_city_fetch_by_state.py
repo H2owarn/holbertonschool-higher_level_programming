@@ -3,6 +3,7 @@
 """This script connects to a MySQL database and retrieves
 all cities from the 'cities' table along with their states."""
 
+
 import sys
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
@@ -35,5 +36,5 @@ if __name__ == "__main__":
 
     for city in cities:
         print(f"{city[0]}: ({city[1]}) {city[2]}")
-    # Close the session
+
     session.close()
