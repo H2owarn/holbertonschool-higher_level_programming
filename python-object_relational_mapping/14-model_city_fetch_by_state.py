@@ -35,7 +35,5 @@ if __name__ == "__main__":
 
     for city in cities:
         print(f"{city[0]}: ({city[1]}) {city[2]}")
-
-
-
+    # Close the session
     session.close()
