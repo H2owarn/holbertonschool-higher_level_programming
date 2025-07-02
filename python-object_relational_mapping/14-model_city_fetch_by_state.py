@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """This script connects to a MySQL database and retrieves
 all cities from the 'cities' table along with their states."""
 
