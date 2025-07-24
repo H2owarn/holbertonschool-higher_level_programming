@@ -10,7 +10,7 @@ function add (a, b) {
 }
 
 if (!first || !secound) {
-  console.log('Nan');
+  console.log('NaN');
 } else {
   const result = add(first, secound);
   console.log(result);
