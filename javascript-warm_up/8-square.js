@@ -7,7 +7,7 @@ if (isInteger) {
   const num = parseInt(args, 10);
   let i = 0;
   while (i < num) {
-    console.log('x'.repeat(num));
+    console.log('X'.repeat(num));
     i += 1;
   }
 } else {
