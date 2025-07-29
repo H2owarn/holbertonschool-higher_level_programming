@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 
-s1 = [1, 2, 3]
-s2 = s1
+def increment(n):
+    n.append(4)
 
-
-print(s1 is s2)
-
+l = [1, 2, 3]
+increment(l)
+print(l)
